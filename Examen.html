@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos-nombre-apellido.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Encuesta - Nombre Apellido</title>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <form id="encuestaForm" action="Examen_Respuesta.html">
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" class="form-control" id="edad" name="edad" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select class="form-select" id="sexo" name="sexo" required>
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="educacion">Nivel de educación:</label>
+                <select class="form-select" id="educacion" name="educacion" required>
+                    <option value="preescolar">Preescolar</option>
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="bachillerato">Bachillerato</option>
+                    <option value="universidad">Universidad</option>
+                    <option value="posgrado">Posgrado</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="ocupacion">Ocupación:</label>
+                <input type="text" class="form-control" id="ocupacion" name="ocupacion" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <script src="JSExamen.js"></script>
+
+
+</body>
+</html>
